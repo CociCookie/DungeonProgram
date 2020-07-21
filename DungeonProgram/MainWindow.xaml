@@ -1,0 +1,39 @@
+﻿<Window x:Class="DungeonProgram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DungeonProgram"
+        mc:Ignorable="d"
+        Title="Dungeon Information Program Thing" Width="640" Height="480" MinWidth="640" MinHeight="480">
+    <!-- Define the Grid for the Main Layout-->
+    <Grid x:Name="LayoutGrid" ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="24"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <!-- Row 1 -->
+        <Ribbon Grid.Row="0" Grid.ColumnSpan="2"/>
+        <!-- Row 2 -->
+        <ListBox Grid.Row="1" Grid.Column="0" MinWidth="200">
+            
+            
+        </ListBox>
+
+        <!-- Row 3 -->
+        
+        <!-- Row 4 -->
+        <StatusBar Grid.Row="3" Grid.ColumnSpan="2">
+            <StatusBarItem >
+                <TextBlock Text="Fine"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+
+</Window>
